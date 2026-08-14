@@ -6,11 +6,11 @@
 
   "description": "Simule a gravação de áudio com um clique e segure.",
 
-  "start_url": "/missao113/",
+  "start_url": "/missao_113/",
 
-  "scope": "/missao113/",
+  "scope": "/missao_113/",
 
-  "id": "/missao113/",
+  "id": "/missao_113/",
 
   "display": "standalone",
 
@@ -26,7 +26,7 @@
 
     {
 
-      "src": "MIC_192.png",
+      "src": "/missao_113/MIC_192.png",
 
       "sizes": "192x192",
 
@@ -38,7 +38,7 @@
 
     {
 
-      "src": "MIC_512.png",
+      "src": "/missao_113/MIC_512.png",
 
       "sizes": "512x512",
 
@@ -50,7 +50,7 @@
 
     {
 
-      "src": "MIC_192.png",
+      "src": "/missao_113/MIC_192.png",
 
       "sizes": "192x192",
 
@@ -62,7 +62,7 @@
 
     {
 
-      "src": "MIC_512.png",
+      "src": "/missao_113/MIC_512.png",
 
       "sizes": "512x512",
 
