@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Disney</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <!-- Fonte parecida com a identidade Disney -->
+    <link href="https://fonts.cdnfonts.com/css/waltograph" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Disney</h1>
+
+        <p id="contador">
+            0 personagens carregados
+        </p>
+    </header>
+
+    <section class="container" id="personagens">
+        <!-- Os personagens serão criados pelo JavaScript -->
+    </section>
+
+    <div class="controle">
+
+        <button id="carregarMais">
+            CARREGAR MAIS
+        </button>
+
+        <p id="pagina">
+            Página 1
+        </p>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker.register("./sw.js")
+                    .then(function () {
+                        console.log("Service Worker registrado com sucesso!");
+                    })
+                    .catch(function (erro) {
+                        console.error("Erro ao registrar o Service Worker:", erro);
+                    });
+            });
+        }
+    </script>
+
+</body>
+
+</html>
