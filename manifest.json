@@ -846,12 +846,12 @@
   ],
    "icons": [
         {
-            "src": "./img/disney192.png",
+            "src": ".disney192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {   
-            "src": "./img/disney512.png",
+            "src": ".disney512.png",
             "sizes": "512x512",
             "type": "image/png"
         }]
