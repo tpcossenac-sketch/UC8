@@ -3,7 +3,7 @@
     "count": 50,
     "totalPages": 197,
     "previousPage": null,
-    "nextPage": "http://api.disneyapi.dev/character?page=2&amp;pageSize=50"
+    "nextPage": "http://api.disneyapi.dev/character?page=2&amp;amp;pageSize=50"
   },
   "data": [
     {
@@ -382,7 +382,7 @@
       "films": [],
       "shortFilms": [],
       "tvShows": [
-        "PB&amp;J Otter"
+        "PB&amp;amp;J Otter"
       ],
       "videoGames": [],
       "parkAttractions": [
@@ -399,7 +399,7 @@
       "films": [],
       "shortFilms": [],
       "tvShows": [
-        "Timon &amp; Pumbaa"
+        "Timon &amp;amp; Pumbaa"
       ],
       "videoGames": [],
       "parkAttractions": [],
@@ -843,5 +843,16 @@
   "prefer_related_applications": false,
   "categories": [
     "kids"
-  ]
+  ],
+   "icons": [
+        {
+            "src": "./img/disney192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {   
+            "src": "./img/disney512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }]
 }
