@@ -1,0 +1,26 @@
+const gravador = document.getElementById('btn-gravador');
+const statusGravacao = document.getElementById('status-gravacao');
+
+// Função para iniciar a gravação
+function iniciarGravacao() {
+
+    gravador.innerHTML = '<img src="img/icon-512.png" alt="Gravando" class="icone-gravador512"> Clique e Segure para Gravar';
+    statusGravacao.textContent = 'Status: Capturando áudio...';
+    gravador.style.backgroundColor = '#e74c3c';
+
+}
+
+// Função para parar a gravação
+function pararGravacao() {
+
+    gravador.innerHTML = '<img src="img/icon-192.png" alt="Gravando" class="icone-gravador"> Clique e Segure para Gravar';
+    statusGravacao.textContent = 'Status: Gravação concluída e enviada!';
+    gravador.style.backgroundColor = '#3498db';
+
+}
+
+// Captura evento de pressionar o botão do gravador
+gravador.addEventListener('mousedown', iniciarGravacao); 
+gravador.addEventListener('mouseup', pararGravacao);
+gravador.addEventListener('touchstart', iniciarGravacao);
+gravador.addEventListener('touchend', pararGravacao);
